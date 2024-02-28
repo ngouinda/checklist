@@ -1,0 +1,58 @@
+.cards {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  gap: 20px; */
+  
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 1rem 0; 
+ 
+} 
+
+.card-wrapper{
+    width: 270px; 
+    height: 270px; 
+    box-shadow: 0px 3px 50px #474444;
+    
+  }
+  
+  .card-top{
+    width: 100%;
+    height: 2%;
+  }
+  
+  .task-holder{
+    width: 100%;
+    height: 98%;
+    padding: 10px 10px;
+    display : flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .card-header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 80px;
+    height: 30px;
+    padding: 1px 1px !important;
+    text-align: center;
+  }
+  
+  .task-container{
+    height: 590px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* enlever cette propriete pour le mobilfirst*/
+    background-color: #ffffff;
+    padding : 170px 30px;
+  }
+/* ***************MOBILE FIRST *********************/
+
+@media (max-width: 350px) {
+  .cards {
+   grid-template-columns: 1fr;
+   
+  } 
+}
